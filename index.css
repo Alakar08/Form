@@ -1,0 +1,361 @@
+/* UNIVERSAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: antiquewhite;
+
+}
+
+/* MAIN */
+.main-container {
+    width: 75%;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    margin: auto;
+}
+
+/* SECTION */
+section {
+    min-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icon i {
+    font-size: 40px;
+    color: rgb(68, 67, 67);
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.label h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orangered;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.label p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 20px;
+    color: gray;
+}
+
+
+/* FORM */
+form {
+    min-height: 550px;
+    background-color: rgb(234, 196, 162);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.time {
+    display: inline;
+}
+
+.first,
+.last,
+.email,
+.phone,
+.date,
+.time {
+    width: 49%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.address,
+.boarding {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 40px 10px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: orangered;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 25px 10px 25px;
+}
+
+
+@media only screen and (min-width:300px) and (max-width:555px) {
+    /* SECTION */
+    .main-container {
+        gap:20px;
+        justify-content: center;
+    }
+    
+    section {
+        background-color: rgb(234, 196, 162);
+        border-radius:15px;
+    }
+    .icon i {
+        font-size: 25px;
+        color: rgb(68, 67, 67);
+    }
+    
+    .label h1 {
+        font-size: 13px;
+    }
+    
+    .label p {
+        line-height: 15px;
+        font-size:12px;
+    }  
+    
+    /* FORM */
+    form {
+        min-height: 500px;
+    }
+    
+    .first,
+    .last,
+    .email,
+    .phone,
+    .date,
+    .time {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .address,
+    .boarding {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    text-area {
+        padding: 10px 10px 60px 10px;
+    }
+}
+
+ @media only screen and (min-width:555px) and (max-width:822px) {
+    .main-container {
+        gap:20px;
+    }
+
+    section {
+        justify-content: center;
+        background-color: rgb(234, 196, 162);
+        border-radius:15px;
+    }
+    
+    .icon i {
+        font-size: 25px;
+        color: rgb(68, 67, 67);
+    }
+    
+    .label h1 {
+        font-size: 20px;
+    }
+    
+    .label p {
+        line-height: 15px;
+    } 
+} 
+
+@media only screen and (min-width:972px) and (max-width:1102px) {
+    .main-container {
+        gap:30px;
+    }
+   
+    .icon i {
+        font-size: 30px;
+        color: rgb(68, 67, 67);
+    }
+    
+    .label h1 {
+        font-size: 16px;
+    }
+    
+    .label p {
+        font-size:13px;
+    }
+
+    /* FORM */
+    form {
+        min-height: 500px;
+    }
+    
+    .first,
+    .last,
+    .email,
+    .phone,
+    .date,
+    .time {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .address,
+    .boarding {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    text-area {
+        padding: 10px 10px 60px 10px;
+    }
+}
+
+@media only screen and (min-width:1103px) and (max-width:1279px) {
+    .main-container {
+        gap:40px;
+    }
+   
+    .icon i {
+        font-size: 35px;
+        color: rgb(68, 67, 67);
+    }
+    
+    .label h1 {
+        font-size: 19px;
+    }
+    
+    .label p {
+        font-size:14px;
+    }  
+} 
+
+@media only screen and (min-width:823px) and (max-width:837px) {
+    .main-container {
+        gap:30px;
+    }
+
+    section {
+        justify-content: center;
+        border-radius:15px;
+        background-color:rgb(234, 196, 162);;
+    }
+    
+    .icon i {
+        font-size: 30px;
+        color: rgb(68, 67, 67);
+    }
+    
+    .label h1 {
+        font-size: 15px;
+    }  
+
+    /* FORM */
+    form {
+        min-height: 500px;
+    }
+    
+    .first,
+    .last,
+    .email,
+    .phone,
+    .date,
+    .time {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .address,
+    .boarding {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    text-area {
+        padding: 10px 10px 60px 10px;
+    }
+}
+
+@media only screen and (min-width:838px) and (max-width:971px) {
+    .main-container {
+        gap:20px;
+    }
+
+    section {
+        justify-content: center;
+        border-radius:15px;
+    }
+    
+    .icon i {
+        font-size: 30px;
+        color: rgb(68, 67, 67);
+    }
+    
+    .label h1 {
+        font-size: 14px;
+    }
+
+    .label p {
+        font-size:12px;
+    } 
+
+    /* FORM */
+    form {
+        min-height: 500px;
+    }
+    
+    .first,
+    .last,
+    .email,
+    .phone,
+    .date,
+    .time {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .address,
+    .boarding {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    text-area {
+        padding: 10px 10px 60px 10px;
+    }
+}
